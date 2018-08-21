@@ -1,17 +1,14 @@
 <template>
-<h1>Hello World,"Server is: {{status}}"</h1>
+<div>
+    <h1>Hello World</h1>
+    <hr>
+   <app-servers></app-servers>
+</div>
+
 </template>
 
 <script>
 // a component is a reusable piece of our instance,basically extends the vue instance
-    export default {
-       data:function () {
-            return{
-                status:"Stable"
-            }
-        },
-
-    }
 
 </script>
 
