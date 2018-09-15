@@ -1,7 +1,6 @@
 <template>
     <div>
         <app-server-status v-for="server in 3"></app-server-status>
-
     </div>
 </template>
 
