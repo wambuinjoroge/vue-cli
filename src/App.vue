@@ -1,7 +1,7 @@
 <template>
-<div>
-    <h1>The catch phrase should always be at the top</h1>
-<br>
+<div class="container">
+    <h2>Get a house now!!!</h2>
+
    <!--<app-servers></app-servers>-->
 
     <!--<button @click="selectedComponent = 'app-quote'">-->
@@ -22,7 +22,7 @@
        <!--<h1 slot="content">You better be ready!!</h1>-->
    <!--</app-quote>-->
 
-    <app-house v-for="house in 8" class="col-xs-3"></app-house>
+    <app-house v-for="house in 12" class="col-xs-3"></app-house>
 </div>
 
 </template>
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style scoped>
-  h1{
+  h2{
       font-weight: bold;
   }
 </style>
