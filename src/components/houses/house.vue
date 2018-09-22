@@ -33,7 +33,8 @@
 <style scoped>
     a p{
         color: darkred;
-    },
+        font-weight: bold;
+    }
     img {
         margin-top: 5px;
         max-width: 100%;

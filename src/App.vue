@@ -1,6 +1,5 @@
 <template>
-<div class="container">
-    <h2>Get a house now!!!</h2>
+<div>
 
    <!--<app-servers></app-servers>-->
 
@@ -22,7 +21,10 @@
        <!--<h1 slot="content">You better be ready!!</h1>-->
    <!--</app-quote>-->
 
-    <app-house v-for="house in 12" class="col-xs-3"></app-house>
+    <app-landing></app-landing>
+    <app-card></app-card>
+    <app-house v-for="house in 3" class="col-xs-3"></app-house>
+
 </div>
 
 </template>
@@ -33,6 +35,8 @@ import Quote from "./components/Quote";
 import Author from "./components/Author";
 import New from "./components/New";
 import House from "./components/houses/house";
+import Landing from "./components/houses/landing";
+import Card from "./components/houses/card";
 
 export default {
     data:function () {
@@ -45,12 +49,12 @@ export default {
         "app-author":Author,
         "app-new":New,
         "app-house":House,
+        "app-landing":Landing,
+        "app-card":Card,
     },
 }
 </script>
 
-<style scoped>
-  h2{
-      font-weight: bold;
-  }
+<style>
+
 </style>
