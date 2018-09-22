@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-12">
         <div class="row">
-            <h1></h1>
+            <h1>BOMALY</h1>
         </div>
     </div>
 </template>
@@ -14,13 +14,14 @@
 
 <style scoped>
     div{
-        background-image: url("");
-        /*background-image: url("../../assets/cow.jpg");*/
-        min-height: 639px;
+        /*background-image: url("");*/
+        background-image: url("../../assets/sa.png");
+        min-height: 550px;
         background-size: cover;
     }
     h1{
-        text-align: center;
-        padding-top: 50px;
+        color: white;
+        margin: auto;
+        font-size: 150px;
     }
 </style>

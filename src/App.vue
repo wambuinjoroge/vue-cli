@@ -1,29 +1,17 @@
 <template>
-<div>
-
-   <!--<app-servers></app-servers>-->
-
-    <!--<button @click="selectedComponent = 'app-quote'">-->
-        <!--Quote-->
-    <!--</button>-->
-    <!--<button @click="selectedComponent = 'app-author'">-->
-        <!--Author-->
-    <!--</button>-->
-    <!--<button @click="selectedComponent = 'app-new'">-->
-        <!--New Quote-->
-    <!--</button>-->
-    <!--<p>{{ selectedComponent }}</p>-->
-    <!--<keep-alive>-->
-        <!--<component :is="selectedComponent"></component>-->
-    <!--</keep-alive>-->
-   <!--<app-quote>-->
-       <!--<h1 slot="title">Hello World</h1>-->
-       <!--<h1 slot="content">You better be ready!!</h1>-->
-   <!--</app-quote>-->
+<div style="font-family: Verdana, Geneva, sans-serif">
 
     <app-landing></app-landing>
-    <app-card></app-card>
-    <app-house v-for="house in 3" class="col-xs-3"></app-house>
+    <!--<app-card></app-card>-->
+
+    <div class="container">
+        <h3>Homes for you</h3>
+        <div class="row">
+            <app-house v-for="house in 4" class="col-lg-3"></app-house>
+        </div>
+    </div>
+
+
 
 </div>
 
@@ -31,9 +19,7 @@
 
 <script>
 // a component is a reusable piece of our instance,basically extends the vue instance
-import Quote from "./components/Quote";
-import Author from "./components/Author";
-import New from "./components/New";
+
 import House from "./components/houses/house";
 import Landing from "./components/houses/landing";
 import Card from "./components/houses/card";
@@ -45,9 +31,6 @@ export default {
         }
     },
     components:{
-        "app-quote":Quote,
-        "app-author":Author,
-        "app-new":New,
         "app-house":House,
         "app-landing":Landing,
         "app-card":Card,
@@ -55,6 +38,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    div.container{
+        margin-top: 20px;
+    }
+    h3{
+        font-weight: 700;
+        margin-bottom: 0;
+    }
 </style>
